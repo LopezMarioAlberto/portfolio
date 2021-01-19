@@ -9,7 +9,7 @@ body {
 	font-family: 'Domine', serif;
 }
 
-h1{
+h1 {
     padding: 15px;
     font-family: 'Great Vibes', cursive;
     font-size: 300%;
@@ -109,6 +109,9 @@ header .categorias a.activo {
 	width: 100%;
 	cursor: pointer;
 	vertical-align: top;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
 }
 
 /* ------------------------- */
@@ -135,6 +138,9 @@ header .categorias a.activo {
 
 .overlay img {
 	max-width: 100%;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
 }
 
 .overlay .descripcion {
@@ -149,6 +155,7 @@ header .categorias a.activo {
 
 .contenedor-img {
 	position: relative;
+	border-radius: 10px;
 }
 
 .overlay #btn-cerrar-popup {
