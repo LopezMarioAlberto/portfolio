@@ -3,22 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
 
-/*
-CSS:
-Font-size: rem
-Padding: em
-Margin: em
-Widths: em or %
-
-  --eagle: rgba(0,76,84,1);
-  --jersey: rgba(95,96,98,1);
-  --helmet: rgba(186,202,211,1);
-  --silver: rgba((165,172,175,1);
-  --green-grad: #75BF7F;
-  --orange-grad: #F1451E;
-  --grey-grad: #818181;
-*/
-
 /* Eliminando comportamientos predeterminados */
 * {
 	margin: 0;
@@ -30,6 +14,8 @@ Widths: em or %
 body {
     position: relative;
     font-family: 'Domine';
+    color: white;
+    background-color: #42646E;
 }
 
 ul {
@@ -84,13 +70,11 @@ header {
     url('https://images.unsplash.com/photo-1578048421563-9aa187e12baf');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    max-height: 100vh;
 }
 
 .header-content {
     text-align: center;
-    padding-top: 30vh;
+    padding: 10%;
     color: white;
 }
 
@@ -117,12 +101,10 @@ header {
 
 /* Sección - Acerca */
 .about-container {
-  background-color: #42646E;
-  color: white;
-  height: 100vh;
-  max-height: 100vh;
   border-style: solid;
   border-color: #42646E;
+/*  height: 100vh;
+  max-height: 100vh;*/
 }
 
 h2 {
@@ -156,13 +138,28 @@ h2 {
 }
 
 /* --Sección - Portfolio-- */
+#portafolio {
+    background-color: rgba(95,96,98,1);
+    width: 100%;
+    padding: 2em 0;
+}
 
+.work-sample {
+    padding: 2em 0;
+}
+
+.description {
+font-size: 1.2em;
+}
 
 #work-section h2 {
     padding-bottom: 2em;
 }
+
 .work-info h4 {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    font-size: 1.4em;
 }
 
 .technologies-used {
@@ -170,7 +167,7 @@ h2 {
 }
 
 .work-buttons {
-    padding-top: 8px;
+    padding-top: 0.5em;
 }
 
 .work-buttons .btn {
@@ -179,19 +176,17 @@ h2 {
     display: inline-block;
 }
 
-.work-buttons i {
-    padding-right: 5px;
+.work-buttons a button {
+    color: rgba(0,76,84,1);
 }
 
-/* Hover.css for custom :hover states on buttons in work section *//*
+/* Hover.css for custom :hover states on buttons in work section */
 .work-buttons button {
-  background: none;
+  background: white;
   color: black;
-  font-size: 14px;
-  height: 30px;
-  width: 100px;
-*//*   line-height: 30px; *//*
-*//*   margin: 10px; *//*
+  font-size: 1.4rem;
+  height: 2em;
+  width: 20%;
   text-align: center;
   border: 1px solid #697082;
   border-radius: 24px;
@@ -251,7 +246,6 @@ h2 {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-  *//* End hover.css button styling...that's a lot of code right there... *//*
 
 .row > hr {
   padding: 20px;
@@ -259,10 +253,8 @@ h2 {
   width: 70%;
 }
 
-*//* --END WORK SECTION STYLING-- *//*
 
-
-*//* --BEGIN CONTACT SECTION STYLING-- *//*
+/* Sección - Contacto */
 .contact-container{
   margin-top: 4em;
   margin-bottom: 3em;
@@ -317,7 +309,7 @@ h2 {
   height: 25px;
 }
 
-  *//* Social buttons at bottom of apge - different from "contact button" *//*
+/* Social buttons at bottom of page - different from "contact button" */
 .contact-buttons {
   height: 60px;
   margin: auto;
@@ -338,26 +330,22 @@ h2 {
   margin-right: 1em;
 }
 
-*//* Specific colors for each button *//*
+/* Specific colors for each button */
 .github-social {
-  color: #272628;
+    background-color: white;
+    color: rgba(95,96,98,1);
 }
 .codepen-social {
-  color: #272628;
+    background-color: white;
+    color: rgba(95,96,98,1);
 }
-.fcc-social {
-  color: #106E29;
-}
-.twitter-social {
-  color: #55acee;
-}
+
 .linkedin-social {
-  color: #007bb5;
+    background-color: white;
+    color: rgba(95,96,98,1);
 }
-.medium-social {
-  color: #3cb371;
-}
-*//* Change specific colors on :hover *//*
+
+/* Change specific colors on :hover */
 .contact-buttons > a {
   transition: all .5s;
 }
@@ -366,38 +354,23 @@ h2 {
 }
 .contact-buttons > a.github-social:hover, .contact-buttons > a.github-social:focus {
   color: white;
-  background-color: #272628;
+  background-color: #F1451E;
 }
 .contact-buttons > a.codepen-social:hover, .contact-buttons > a.codepen-social:focus {
   color: white;
-  background-color: #272628;
+  background-color: #75BF7F;
 }
-.contact-buttons > a.fcc-social:hover, .contact-buttons > a.fcc-social:focus {
-  color: white;
-  background-color: #106E29;
-}
-.contact-buttons > a.twitter-social:hover, .contact-buttons > a.twitter-social:focus {
-  color: white;
-  background-color: #55acee;
-}
+
 .contact-buttons > a.linkedin-social:hover, .contact-buttons > a.linkedin-social:focus {
   color: white;
   background-color: #007bb5;
 }
-.contact-buttons > a.medium-social:hover, .contact-buttons > a.medium-social:focus {
-  color: white;
-  background-color: #3cb371;
-}
 
 
-*//* --END CONTACT SECTION STYLING-- *//*
-
-
-
-*//* Pie *//*
+/* Pie */
 .footer {
-  background-color: rgba(165, 172, 175,0.8);
-  color: rgb(95,96,98);
+  background-color: rgba(165, 172, 175);
+  color: white;
   text-align: center;
   height: 6em;
   padding-top: 8px;
@@ -411,7 +384,7 @@ h2 {
 
 */
 
-/* --Begin @media Styling for Smaller Screens-- */
+/* @media Styling */
 
 /* Cabecera */
 @media (max-width: 767px) {
@@ -436,7 +409,7 @@ h2 {
     }
 }
 
-/* Work *//*
+/* Work */
 @media (max-width: 767px) {
   .work-buttons button{
     margin-top: 8px;
@@ -447,7 +420,7 @@ h2 {
   }
 }
 
-*//* Contact *//*
+/* Contact */
 @media (max-width: 767px) {
   .contact-buttons {
   height: 40px;
