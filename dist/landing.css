@@ -1,0 +1,439 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Domine');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+
+/* Eliminando comportamientos predeterminados */
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+/* General */
+body {
+    position: relative;
+    font-family: 'Domine' !important;
+    color: white;
+    background: rgba(165, 172, 175,0.2);
+}
+
+main{
+    margin: 0;
+}
+
+ul {
+    padding-right: 1em;
+}
+
+/* Barra */
+.navbar {
+    background: none;
+    border: none;
+}
+
+.navbar .navbar-header .icon-bar {
+    color: white;
+    background-color: white;
+}
+
+.navbar .header-container .fa {
+    color: white;
+}
+.navbar .header-container .navbar-collapse .navbar-nav .nav-link {
+    color: white;
+}
+
+/* Barra - Transición */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: rgb(95,96,98) !important;
+    transition: color .5s;
+}
+.navbar .navbar-header .navbar-brand > span:hover, .navbar .navbar-header .navbar-brand > span:focus {
+    color: rgb(95,96,98);
+    transition: color .3s;
+}
+
+.navbar .header-container .navbar-collapse .navbar-nav > .active > a {
+    color: rgb(95,96,98);
+    background: none;
+}
+
+.navbar-default {
+    background: transparent;
+    border: none;
+    transition: 0.3s all linear;
+}
+.navbar-default.change-color {
+    background-color: rgba(165, 172, 175,0.8);
+}
+
+/*  Cabecera */
+header {
+    background: linear-gradient(0deg, rgba(0,142,151, .6) , rgba(252, 76, 2, .2)),
+    url('https://images.unsplash.com/photo-1578048421563-9aa187e12baf');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-content {
+    text-align: center;
+    padding: 12em;
+    color: white;
+    vertical-align: middle;
+}
+
+.animated {
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.header-content h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.5em;
+    color: white;
+}
+
+.header-content p {
+    font-size: 1.7em;
+}
+
+
+/* Sección - Acerca */
+.about-container {
+    background: linear-gradient(180deg, rgb(0,87,120), rgb(0,142,151));
+    border: solid  rgb(0,142,151);
+    padding: 0;
+}
+
+h2 {
+    padding-top: 1em;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3em;
+}
+
+.about-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    max-width: 25em;
+    margin: auto;
+    border: 0.3em solid #ddd;
+}
+
+.about-p strong {
+    font-size: 1.2em;
+}
+
+.about-p {
+    line-height: 2em;
+    margin: 0;
+    padding: 2em;
+}
+
+
+/* --Sección - Portfolio-- */
+#portafolio {
+    margin: 0;
+    color: rgb(72, 79, 81);
+}
+
+.work-sample {
+    padding: 2em 0;
+}
+
+.description {
+font-size: 1.2em;
+}
+
+#work-section h2 {
+    padding-bottom: 1em;
+    color: rgb(0,87,120);
+}
+
+.work-info h4 {
+    margin-bottom: 1em;
+    padding-top: .5em;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgb(0,87,120);
+}
+
+.technologies-used {
+    display: inline-block;
+}
+
+.work-buttons {
+    padding-top: 0.5em;
+}
+
+.work-buttons .btn {
+    border-radius: 24px;
+    padding: 4px 20px;
+    display: inline-block;
+}
+
+.work-buttons a button {
+    color: rgba(0,76,84,1);
+}
+
+.img-thumbnail {
+    border-radius: 2em;
+}
+
+/* Hover.css for custom :hover states on buttons in work section */
+.work-buttons button {
+  background: white;
+  color: black;
+  font-size: 1.4rem;
+  height: 3em;
+  width: 20%;
+  min-width: 7em;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 24px;
+  display: inline-block;
+  overflow: hidden;
+}
+.work-buttons button:hover{
+  background-color: #697082;
+  color: white;
+  border: 1px solid #697082;
+  transition-duration: .3s;
+  text-decoration: none;
+}
+
+
+@keyframes hvr-icon-pop {
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+.hvr-icon-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-pop:before {
+  content: "\f1cb";
+  position: absolute;
+  right: 1.5em;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.github-button .hvr-icon-pop:before {
+  content: "\f09b"
+}
+.hvr-icon-pop:hover:before, .hvr-icon-pop:focus:before, .hvr-icon-pop:active:before {
+  -webkit-animation-name: hvr-icon-pop;
+  animation-name: hvr-icon-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.row > hr {
+  padding: 20px;
+  margin-top: 40px;
+  width: 70%;
+}
+
+
+/* Sección - Contacto */
+.contact-container{
+  background: linear-gradient(180deg, rgb(0,87,120), rgb(252, 76, 2));
+}
+.contact-section {
+  text-align: center;
+}
+
+.contact-button {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform:translate3d(0,0,0);
+  color: #697082;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2em;
+  border: 2px solid #697082;
+  border-radius: 4px;
+  padding: 20px 65px;
+  transition: 0.3s ease-in-out;
+
+}
+.contact-button > span {
+  text-transform: none;
+  position: absolute;
+  color: white;
+  top: 20px;
+  left: 12px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+
+.contact-button:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid #697082;
+  border-radius: 50px;
+  background-color: #697082;
+  color: #697082;
+}
+.contact-button:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+  font-size: 14px;
+}
+.contact-button:before, contact-button:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 132px;
+  height: 25px;
+}
+
+.contact-buttons {
+  height: 60px;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding-top: 15px;
+
+}
+
+.social {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1.5px solid #272628;
+  border-radius: 28%;
+  margin-right: 1em;
+}
+
+/* Specific colors for each button */
+.github-social {
+    background-color: white;
+    color: rgba(95,96,98,1);
+}
+.codepen-social {
+    background-color: white;
+    color: rgba(95,96,98,1);
+}
+
+.linkedin-social {
+    background-color: white;
+    color: rgba(95,96,98,1);
+}
+
+/* Change specific colors on :hover */
+.contact-buttons > a {
+  transition: all .5s;
+}
+.contact-buttons > a:hover, .contact-buttons > a:focus {
+  border: none;
+}
+.contact-buttons > a.github-social:hover, .contact-buttons > a.github-social:focus {
+  color: white;
+  background-color: #F1451E;
+}
+.contact-buttons > a.codepen-social:hover, .contact-buttons > a.codepen-social:focus {
+  color: white;
+  background-color: #75BF7F;
+}
+
+.contact-buttons > a.linkedin-social:hover, .contact-buttons > a.linkedin-social:focus {
+  color: white;
+  background-color: #007bb5;
+}
+
+/* @media Styling */
+
+/* Cabecera */
+@media (max-width: 767px) {
+    header {
+    height: 100vh;
+    }
+    .header-content h1 {
+        font-size: 2.5em;
+    }
+    .header-content p {
+        font-size: 1.2em;
+    }
+}
+
+/* About */
+@media (max-width: 767px) {
+    .about-p {
+        margin: 15px;
+    }
+    .profile-pic {
+        height: 18em;
+    }
+    .about-row {
+        display: block;
+    }
+}
+
+/* Work */
+@media (max-width: 767px) {
+  .work-buttons button{
+    margin-top: 8px;
+  }
+
+  #work-section h2 {
+  padding-bottom: 1em;
+  }
+}
+
+/* Contact */
+@media (max-width: 767px) {
+  .contact-buttons {
+  height: 40px;
+}
+
+  .social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 3px;
+  }
+
+  .contact-section p {
+    margin: 20px;
+  }
+
+}
