@@ -19,9 +19,9 @@
 /* General */
 body {
     position: relative;
-    font-family: 'Domine';
+    font-family: 'Domine' !important;
     color: white;
-    background: linear-gradient(45deg, rgba(186,202,211, 0.4), rgba(165,172,175, 0.6));
+    background: rgba(165, 172, 175,0.2);
 }
 
 main{
@@ -76,16 +76,18 @@ ul {
 
 /*  Cabecera */
 header {
-    background: linear-gradient(45deg, rgba(186,202,211, 0.8), rgba(165,172,175, 0.6)),
+    background: linear-gradient(0deg, rgba(0,142,151, .6) , rgba(252, 76, 2, .2)),
     url('https://images.unsplash.com/photo-1578048421563-9aa187e12baf');
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 
 .header-content {
     text-align: center;
-    padding: 10%;
+    padding: 12em;
     color: white;
+    vertical-align: middle;
 }
 
 .animated {
@@ -97,11 +99,7 @@ header {
 .header-content h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 4.5em;
-    color: rgba(0,76,84,1);
-}
-
-.header-content h1 span {
-    color: #F1451E;
+    color: white;
 }
 
 .header-content p {
@@ -111,14 +109,14 @@ header {
 
 /* Sección - Acerca */
 .about-container {
-    background-color: #60919f;
-    border: solid #60919f;
+    background: linear-gradient(180deg, rgb(0,87,120), rgb(0,142,151));
+    border: solid  rgb(0,142,151);
     padding: 0;
 }
 
 h2 {
     padding-top: 1em;
-    font-family: 'Cormorant Garamond';
+    font-weight: 700;
     text-align: center;
     font-size: 3em;
 }
@@ -131,9 +129,8 @@ h2 {
 
 .profile-pic {
     max-width: 25em;
-/*    padding-top: 0.5em;
-    padding-bottom: 1em;*/
     margin: auto;
+    border: 0.3em solid #ddd;
 }
 
 .about-p strong {
@@ -150,7 +147,7 @@ h2 {
 /* --Sección - Portfolio-- */
 #portafolio {
     margin: 0;
-    color: rgb(72, 79, 81)
+    color: rgb(72, 79, 81);
 }
 
 .work-sample {
@@ -163,12 +160,15 @@ font-size: 1.2em;
 
 #work-section h2 {
     padding-bottom: 1em;
+    color: rgb(0,87,120);
 }
 
 .work-info h4 {
     margin-bottom: 1em;
-    padding-top: 1em;
+    padding-top: .5em;
     font-size: 1.4em;
+    font-weight: 700;
+    color: rgb(0,87,120);
 }
 
 .technologies-used {
@@ -189,15 +189,20 @@ font-size: 1.2em;
     color: rgba(0,76,84,1);
 }
 
+.img-thumbnail {
+    border-radius: 2em;
+}
+
 /* Hover.css for custom :hover states on buttons in work section */
 .work-buttons button {
   background: white;
   color: black;
   font-size: 1.4rem;
-  height: 2em;
+  height: 3em;
   width: 20%;
+  min-width: 7em;
   text-align: center;
-  border: 1px solid #697082;
+  border: 1px solid white;
   border-radius: 24px;
   display: inline-block;
   overflow: hidden;
@@ -205,6 +210,7 @@ font-size: 1.2em;
 .work-buttons button:hover{
   background-color: #697082;
   color: white;
+  border: 1px solid #697082;
   transition-duration: .3s;
   text-decoration: none;
 }
@@ -265,7 +271,7 @@ font-size: 1.2em;
 
 /* Sección - Contacto */
 .contact-container{
-  background-color: rgba(165, 172, 175);
+  background: linear-gradient(180deg, rgb(0,87,120), rgb(252, 76, 2));
 }
 .contact-section {
   text-align: center;
@@ -317,7 +323,6 @@ font-size: 1.2em;
   height: 25px;
 }
 
-/* Social buttons at bottom of page - different from "contact button" */
 .contact-buttons {
   height: 60px;
   margin: auto;
@@ -378,6 +383,9 @@ font-size: 1.2em;
 
 /* Cabecera */
 @media (max-width: 767px) {
+    header {
+    height: 100vh;
+    }
     .header-content h1 {
         font-size: 2.5em;
     }
