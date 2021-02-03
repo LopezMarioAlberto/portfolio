@@ -397,7 +397,7 @@ font-size: 1.2em;
 /* About */
 @media (max-width: 767px) {
     .about-p {
-        margin: 15px;
+        margin: 1em;
     }
     .profile-pic {
         height: 18em;
